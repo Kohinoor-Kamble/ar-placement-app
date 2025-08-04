@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main"
+    android:padding="24dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+   >
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_drill"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        />
+
+    <Spinner android:id="@+id/drillSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/drill_names"
+        android:layout_marginBottom="24dp"/>
+
+    <Button android:id="@+id/btnStartDrill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/start_ar_drill"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>
